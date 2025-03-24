@@ -1,19 +1,22 @@
-<html>
+
+<!DOCTYPE html>
+<html lang="ru">
 <head>
 	<meta charset="utf-8">
 	<title>Изображения</title>
+
 </head>
 <body>
 	<section class="center">
 		<h1>Изображения</h1>
         <figure>
-            <img src="images/aquaria.jpg">
+            <img src="images/aquaria.jpg"alt="черепаха">
         </figure>
 		<h2>Элемент <code>img</code></h2>
 
 		<p>Элемент <code>img</code> внедряет изображение в текущий документ в месте определения элемента. Элемент <code>img</code> не имеет содержимого — он замещается на ходу изображением, указанным в атрибуте <code>src</code>.</p>
 			<figure>
-				<img = src="images/muscle.png">
+				<img  src="images/muscle.png" alt="мускулы">
 			</figure>
 		<h2>Альтернативный текст</h2>
 		<p>Атрибут <code>alt</code> предоставляет краткое описание изображения. Он содержит альтернативный текст, который отображается, если изображение не может быть выведено. Пользовательские агенты должны отображать альтернативный текст, если они не поддерживают изображения, или сконфигурированы так, чтобы не показывать изображения (отключен показ изображений).</p>
@@ -33,7 +36,7 @@
 
 		</p>
 		<figure>
-			<img src="images/slon.png"width="100" height="200">
+			<img src="images/slon.png"width="100" height="200" alt="слон с высотой 100">
 			<figcaption>изображение с размером (100x200)</figcaption>
 		</figure>
 
@@ -43,11 +46,12 @@
 		Обычно применяется для иллюстраций, фрагментов кода, схем, графиков, диаграмм и др.
 		Элемент <code>figcaption</code> содержит описание для элемента <code>figure</code>. Он должен быть первым или последним элементом в группе.</p>
 
-		<p>
+		
 			<figure>
-				<img src="images/light.gif">
+				<img src="images/light.gif" alt="свеча">
 				<figcaption>подпись изображения</figcaption>
 			</figure>
+		<p>
 		HTML-элемент <code>picture</code> служит контейнером для одного или более элементов 
 		<code>source</code> и одного элемента <code>img</code> для обеспечения оптимальной версии изображения 
 		для различных размеров экрана. Браузер рассмотрит каждый из дочерних элементов  <code>source</code> 
