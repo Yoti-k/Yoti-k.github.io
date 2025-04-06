@@ -1,7 +1,7 @@
 @import url('reset.css');
 body{
 
-    background-image: url("pattern.svg"); 
+    background-image: url("/lab3/pattern.svg"); 
     background-repeat: repeat;
     color: black;
     background-color: white;
