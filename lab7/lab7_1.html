@@ -1,179 +1,367 @@
-
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Подключение Bootstrap 3 к HTML странице</title>
-    <!-- Bootstrap -->
-    <link href="/examples/vendors/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <!-- Заголовок страницы -->
+    <title>naebka.com</title>
+    <link rel="icon" href="m/logo.png" type="image/x-icon" />
 
-<div class="container">
+    <!-- Подключения таблицы стилей Bootstrap 3 -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <!-- Подключение темы со стилями Bootstrap 3 -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" />
+    <!-- Подключение таблицы стилей иконок Awesome -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <!-- Подключение таблицы стилей, в которой будем прописывать свои стили -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Подключение библиотеки jQuery для работы скриптов Bootstrap 3 -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <!-- Подключение скриптов Bootstrap 3 -->
+    <script src="js/bootstrap.min.js"></script>
+  </head>
 
-    <header style="padding-top:5px;">
-        <div id="logo" style="float:left">
-            <img src="/assets/images/examples/logo.png">
+  <body>
+    <div class="container">
+      <header style="padding-top: 5px">
+        <div id="logo" style="float: left">
+          <img src="m/logo.png" width="100" height="90" alt="крипта тема.png" />
         </div>
-        <div id="contacts" style="float:right;">
-            <i class="fa fa-mobile fa-lg"></i> +7-944-650-1720 |
-            <i class="fa fa-envelope fa-lg"></i> info@business.ru
-            <i class="fa fa-facebook-square fa-2x" style="margin-left:10px; color: blue;"></i>
+        <div id="contacts" style="float: right">
+          <i class="fa fa-mobile fa-lg"></i> +7-800-555-35-35
+          <i class="fa fa-envelope fa-lg"></i> oootmiv@deneg.ru
+          <i
+            class="fa fa-facebook-square fa-2x"
+            style="margin-left: 10px; color: blue"
+          ></i>
         </div>
         <div class="clearfix"></div>
-    </header>
+      </header>
 
-    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+      <nav class="navbar navbar-default navbar-static-top" role="navigation">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-menu">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-menu"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </div>
         <div class="collapse navbar-collapse" id="bs-menu">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Главная</a></li>
-                <li><a href="#main">О компании</a></li>
-                <li><a href="#method">Наш методы</a></li>
-                <li><a href="#work">Наши проекты</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a  href="#" style="padding-top:8px; padding-bottom:8px;">
-                    <span class="btn btn-danger"><strong>Бесплатная консультация</strong></span></a>
-                </li>
-            </ul>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Главная</a></li>
+            <li><a href="#main">О компании</a></li>
+            <li><a href="#method">Наш методы</a></li>
+            <li><a href="#work">Наши проекты</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#" style="padding-top: 8px; padding-bottom: 8px">
+                <span class="btn btn-danger"
+                  ><strong>звонок криптомиллеонеру</strong></span
+                ></a
+              >
+            </li>
+          </ul>
         </div>
-    </nav>
+      </nav>
 
-    <div id="header-bottom" style="position:relative;">
-        <img src="/assets/images/examples/banner.jpg" style="width:100%;">
-        <div id="bannertext" style="position:absolute; top:10%; width:100%; text-align:center; color:white;">
-            <div class="hidden-xs">
-                <h1>Мы предлагаем<br />
-                    <small style="color: white;">маркетинг в социальных сетях для бизнеса</small>
-                </h1>
-            </div>
-            <div class="hidden-sm hidden-md hidden-lg">
-                <p class="lead">Мы предлагаем маркетинг в социальных сетях для бизнеса</p>
-            </div>
-            <a class="btn btn-danger btn-lg">Консультация</a>
+      <div id="header-bottom" style="position: relative">
+        <img src="m/ssss.jpg" style="width: 100%" alt="ssss.jpg" />
+        <div
+          id="bannertext"
+          style="
+            position: absolute;
+            top: 10%;
+            width: 100%;
+            text-align: center;
+            color: white;
+          "
+        >
+          <div class="hidden-xs">
+            <h1>
+              Мы предлагаем<br />
+              <small style="color: white"
+                >мы предлогаем абсолютно честные 99999999$ в секунду отвечаю брат</small
+              >
+            </h1>
+          </div>
+
+          <div class="hidden-sm hidden-md hidden-lg">
+            <p class="lead">
+              не когда не обманем 
+            </p>
+          </div>
+          <a class="btn btn-danger btn-lg">Консультация у криптомиллеонера</a>
         </div>
+      </div>
+
+      <div id="main">
+        <div class="row" style="text-align: center; margin: 15px">
+          <h2>О компании</h2>
+          <p class="lead">Наши основные услуги</p>
+          <hr />
+          <div class="col-md-4">
+            <img src="m/batton.webp" width="80" height="80" alt="" />
+            <h3>Передовые технологии</h3>
+            <p>Предоставим лучший парсер в мире </p>
+          </div>
+          <div class="col-md-4">
+            <img src="m/w.webp" width="80" height="80" alt="" />
+            <h3>Индивидуальность</h3>
+            <p>Такого точно ни у кого нет!!! Только для вас!!! и тысячи других людей</p>
+          </div>
+          <div class="col-md-4">
+            <img src="m/t.webp" width="80" height="80" alt="" />
+            <h3>стабильный доход(наверное)</h3>
+            <p>с нашим парсером вы точно заработаете(или нет)</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="method">
+        <div class="row" style="text-align: center; color: rgb(255, 0, 0); background: rgba(0, 0, 0, 0.997)">
+          <h2>Наши методы</h2>
+          <p class="lead">Наш метод шаг за шагом (как мы это делаем)</p>
+          <hr />
+
+          <ul
+            style="
+              list-style: none;
+              margin: 15px;
+              padding: 10px;
+              box-shadow: 0 0 5px #aaa;
+              background: #fff;
+              border-radius: 3px;
+            "
+          >
+            <li>
+              <div class="list1_img" style="float: left; width: 36%">
+                <img src="m/k.webp" class="img-responsive" alt="" />
+              </div>
+              <div
+                class="list1_desc"
+                style="float: left; width: 61%; margin-left: 1em"
+              >
+                <h3>Шаг 1: Предлагаем лучшие цены</h3>
+                <p>если скинешь на додеп ещё и скидку сделаем </p>
+              </div>
+              <div class="clearfix"></div>
+            </li>
+          </ul>
+
+          <ul
+            style="
+              list-style: none;
+              margin: 15px;
+              padding: 10px;
+              box-shadow: 0 0 5px #aaa;
+              background: #fff;
+              border-radius: 3px;
+            "
+          >
+            <li>
+              <div class="list1_img" style="float: left; width: 36%">
+                <img src="m/s.jpg" class="img-responsive" alt="" />
+              </div>
+              <div
+                class="list1_desc"
+                style="float: left; width: 61%; margin-left: 1em"
+              >
+                <h3>Шаг 2: Тщательно подбираем сотрудников</h3>
+                <p>
+                  2 гениальных крипто инвестора денис и некита (второй правда говорить не умеет)
+                </p>
+              </div>
+              <div class="clearfix"></div>
+            </li>
+          </ul>
+
+          <ul
+            style="
+              list-style: none;
+              margin: 15px;
+              padding: 10px;
+              box-shadow: 0 0 5px #aaa;
+              background: #fff;
+              border-radius: 3px;
+            "
+          >
+            <li>
+              <div class="list1_img" style="float: left; width: 36%">
+                <img src="m/d.png" class="img-responsive" alt="" />
+              </div>
+              <div
+                class="list1_desc"
+                style="float: left; width: 61%; margin-left: 1em"
+              >
+                <h3>Шаг 3: Устраняем конкурентов</h3>
+                <p>они уже обокротились ( мы в процессе)</p>
+              </div>
+              <div class="clearfix"></div>
+            </li>
+          </ul>
+
+          <ul
+            style="
+              list-style: none;
+              margin: 15px;
+              padding: 10px;
+              box-shadow: 0 0 5px #aaa;
+              background: #fff;
+              border-radius: 3px;
+            "
+          >
+            <li>
+              <div class="list1_img" style="float: left; width: 36%">
+                <img src="m/mnogologo.png" class="img-responsive" alt="" />
+              </div>
+              <div
+                class="list1_desc"
+                style="float: left; width: 61%; margin-left: 1em"
+              >
+                <h3>Шаг 4: Реклама</h3>
+                <p>Тут могла быть ваша реклама,но тут и нашей нету потому что денег нет</p>
+              </div>
+              <div class="clearfix"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="work">
+        <div
+          class="row"
+          style="text-align: center; background: #2a2a2a; color: #fff"
+        >
+          <h2>Наши проекты</h2>
+          <p class="lead">криптаны не работают только отдыхают</p>
+
+          <hr />
+
+          <ul
+            style="
+              list-style: none;
+              margin: 15px;
+              padding: 10px;
+              box-shadow: 0 0 5px #aaa;
+              background: #fff;
+              border-radius: 3px;
+              color: black;
+            "
+          >
+            <li>
+              <div
+                class="list1_desc"
+                style="float: left; width: 20%; min-width: 100px"
+              >
+                <h3>криптомиллеонеры отдыхают</h3>
+              </div>
+              <div
+                class="list1_img"
+                style="float: left; width: 75%; margin-left: 1em"
+              >
+                <img
+                  src="m/n.jpg"
+                  width="600"
+                  height="400"
+                  class="img-responsive"
+                  alt="n.jpg"
+                />
+              </div>
+              <div class="clearfix"></div>
+            </li>
+          </ul>
+
+          <ul
+            style="
+              list-style: none;
+              margin: 15px;
+              padding: 10px;
+              box-shadow: 0 0 5px #aaa;
+              background: #fff;
+              border-radius: 3px;
+              color: black;
+            "
+          >
+            <li>
+              <div
+                class="list1_desc"
+                style="float: left; width: 20%; min-width: 100px"
+              >
+                <h3>и это криптомиллеонеры отдыхают </h3>
+              </div>
+              <div
+                class="list1_img"
+                style="float: left; width: 75%; margin-left: 1em"
+              >
+                <img
+                  src="m/nn.webp"
+                  width="600"
+                  height="400"
+                  class="img-responsive"
+                  alt="nn.jpg"
+                />
+              </div>
+              <div class="clearfix"></div>
+            </li>
+          </ul>
+
+          <ul
+            style="
+              list-style: none;
+              margin: 15px;
+              padding: 10px;
+              box-shadow: 0 0 5px #aaa;
+              background: #fff;
+              border-radius: 3px;
+              color: black;
+            "
+          >
+            <li>
+              <div
+                class="list1_desc"
+                style="float: left; width: 20%; min-width: 100px"
+              >
+                <h3>
+                  А это ты, который обязан купить приватку ttps://t.me/Kormushkaspred
+                </h3>
+              </div>
+              <div
+                class="list1_img"
+                style="float: left; width: 75%; margin-left: 1em"
+              >
+                <img
+                  src="m/nnn.jpg "
+                  width="600"
+                  height="400"
+                  class="img-responsive"
+                  alt="nnn.jpg"
+                />
+              </div>
+              <div class="clearfix"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
 
-    <div id="main">
-        <div class="row" style="text-align:center;">
-            <h2>О компании</h2>
-            <p class="lead">Наши основные услуги</p>
-            <hr />
-            <div class="col-md-4">
-                <img src="/assets/images/examples/img-1.png">
-                <h3>Маркетинг Facebook</h3>
-                <p>Facebook насчитывает более 1 миллиарда пользователей. Наша компания занимается изучением этой аудитории для продвижения Вашего бизнеса с помощью брендированных страниц и рекламы. Мы сделаем всё возможное для процветания Вашей компании.</p>
-            </div>
-            <div class="col-md-4">
-                <img src="/assets/images/examples/img-2.png">
-                <h3>Создание страниц</h3>
-                <p>Facebook насчитывает более 1 миллиарда пользователей. Наша компания занимается изучением этой аудитории для продвижения Вашего бизнеса с помощью брендированных страниц и рекламы. Мы сделаем всё возможное для процветания Вашей компании.</p>
-            </div>
-            <div class="col-md-4">
-                <img src="/assets/images/examples/img-3.png">
-                <h3>Управление рекламой</h3>
-                <p>Facebook насчитывает более 1 миллиарда пользователей. Наша компания занимается изучением этой аудитории для продвижения Вашего бизнеса с помощью брендированных страниц и рекламы. Мы сделаем всё возможное для процветания Вашей компании.</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="method">
-        <div class="row" style="text-align:center; background:#f3f3f3;">
-            <h2>Наши методы</h2>
-            <p class="lead">Наш метод шаг за шагом (как мы это делаем)</p>
-            <hr />
-            <ul style="list-style:none; margin:15px; padding:10px; box-shadow:0 0 5px #aaa;
-background: #FFF; border-radius: 3px;">
-                <li class="list1_img" style="float:left; width: 36%;"><img src="/assets/images/examples/pic1.jpg" class="img-responsive"></li>
-                <li class="list1_desc" style="float:left; width:61%; margin-left:1em;"><h3>Шаг 1: Название заголовка</h3>
-                    <p>Мы используем инвестиционный метод, который заключается в комплексном анализе вашего бизнеса для его продвижения. Мы начинаем с изучения преимуществ Вашей компании перед конкурентами. Составляет несколько бизнес-планов на усмотрения заказчика и контролируем весь процесс.</p>
-                </li>
-                <div class="clearfix"> </div>
-            </ul>
-
-            <ul style="list-style:none; margin:15px; padding:10px; box-shadow:0 0 5px #aaa;
-background: #FFF; border-radius: 3px;">
-                <li class="list1_img" style="float:left; width: 36%;"><img src="/assets/images/examples/pic2.jpg" class="img-responsive"></li>
-                <li class="list1_desc" style="float:left; width:61%; margin-left:1em;"><h3>Шаг 2: Название заголовка</h3>
-                    <p>Мы используем инвестиционный метод, который заключается в комплексном анализе вашего бизнеса для его продвижения. Мы начинаем с изучения преимуществ Вашей компании перед конкурентами. Составляет несколько бизнес-планов на усмотрения заказчика и контролируем весь процесс.</p>
-                </li>
-                <div class="clearfix"> </div>
-            </ul>
-
-            <ul style="list-style:none; margin:15px; padding:10px; box-shadow:0 0 5px #aaa;
-background: #FFF; border-radius: 3px;">
-                <li class="list1_img" style="float:left; width: 36%;"><img src="/assets/images/examples/pic3.jpg" class="img-responsive"></li>
-                <li class="list1_desc" style="float:left; width:61%; margin-left:1em;"><h3>Шаг 3: Название заголовка</h3>
-                    <p>Мы используем инвестиционный метод, который заключается в комплексном анализе вашего бизнеса для его продвижения. Мы начинаем с изучения преимуществ Вашей компании перед конкурентами. Составляет несколько бизнес-планов на усмотрения заказчика и контролируем весь процесс.</p>
-                </li>
-                <div class="clearfix"> </div>
-            </ul>
-
-            <ul style="list-style:none; margin:15px; padding:10px; box-shadow:0 0 5px #aaa;
-background: #FFF; border-radius: 3px;">
-                <li class="list1_img" style="float:left; width: 36%;"><img src="/assets/images/examples/pic4.jpg" class="img-responsive"></li>
-                <li class="list1_desc" style="float:left; width:61%; margin-left:1em;"><h3>Шаг 4: Название заголовка</h3>
-                    <p>Мы используем инвестиционный метод, который заключается в комплексном анализе вашего бизнеса для его продвижения. Мы начинаем с изучения преимуществ Вашей компании перед конкурентами. Составляет несколько бизнес-планов на усмотрения заказчика и контролируем весь процесс.</p>
-                </li>
-                <div class="clearfix"> </div>
-            </ul>
-        </div>
-    </div>
-
-    <div id="work">
-        <div class="row" style="text-align:center; background:#f35e59; color:#fff;">
-            <h2>Наши проекты</h2>
-            <p class="lead">Наши избранные работы</p>
-            <hr />
-            <ul style="list-style:none; margin:15px; padding:10px; box-shadow:0 0 5px #aaa;
-background: #FFF; border-radius: 3px; color:black;">
-                <li class="list1_desc" style="float:left; width:20%; min-width:100px;">
-                    <h3>Название фирмы</h3>
-                </li>
-                <li class="list1_img" style="float:left; width: 75%; margin-left:1em;"><img src="/assets/images/examples/w1.png" class="img-responsive"></li>
-                <div class="clearfix"> </div>
-            </ul>
-            <ul style="list-style:none; margin:15px; padding:10px; box-shadow:0 0 5px #aaa;
-background: #FFF; border-radius: 3px; color:black;">
-                <li class="list1_desc" style="float:left; width:20%; min-width:100px;">
-                    <h3>Название фирмы 2</h3>
-                </li>
-                <li class="list1_img" style="float:left; width: 75%; margin-left:1em;"><img src="/assets/images/examples/w2.png" class="img-responsive"></li>
-                <div class="clearfix"> </div>
-            </ul>
-            <ul style="list-style:none; margin:15px; padding:10px; box-shadow:0 0 5px #aaa;
-background: #FFF; border-radius: 3px; color:black;">
-                <li class="list1_desc" style="float:left; width:20%; min-width:100px;">
-                    <h3>Название фирмы 3</h3>
-                </li>
-                <li class="list1_img" style="float:left; width: 75%; margin-left:1em;"><img src="/assets/images/examples/w3.png" class="img-responsive"></li>
-                <div class="clearfix"> </div>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<footer style="margin-top:0px; border-top:none;">
-    <div style="text-align:right; background:#2a2a2a; padding:1em; color: #fff;">
-        © Bussines.ru <br>2010-2014
-    </div>
-</footer>
-
-<!-- jQuery -->
-<script src="/examples/vendors/jquery/jquery-3.3.1.min.js"></script>
-<!-- Bootstrap -->
-<script src="/examples/vendors/bootstrap-3.3.7/js/bootstrap.min.js"></script>
-
-</body>
+    <footer>
+      <div
+        style="
+          text-align: right;
+          background: #2a2a2a;
+          padding: 1em;
+          color: #fff;
+          margin: 15px;
+        "
+      >
+        © kriptaNEkormit <br />da 
+      </div>
+    </footer>
+  </body>
 </html>
-						

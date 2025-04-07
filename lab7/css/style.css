@@ -9,7 +9,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #E74C3C;
+  color: lch(54.54% 72.74 35.91);
   text-decoration: underline;
 }
 
