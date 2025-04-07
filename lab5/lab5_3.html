@@ -3,9 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>inline-block</title>
+    <title>Использование inline-block</title>
 
     <style>
+      .wrap {
+        min-width: 1040px;
+        font-size: 0;
+      }
 
       #left,
       #right,
@@ -13,24 +17,24 @@
         display: inline-block;
         vertical-align: top;
         box-sizing: border-box;
+        font-size: 16px;
       }
 
       #left {
-        width: 200px;
         background: #ccf;
+        width: 200px;
         margin-right: 10px;
       }
 
       #right {
-        width: 200px;
         background: #fcc;
+        width: 200px;
         margin-left: 10px;
       }
 
       #center {
-        width: 600px;
         background: #cfc;
-        
+        width: 600px;
       }
     </style>
   </head>
@@ -66,7 +70,3 @@
     </div>
   </body>
 </html>
-
-
-
-

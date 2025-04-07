@@ -1,114 +1,69 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Оформление вертикального меню</title>
-
-    <!-- connect font awesome -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-
+    <meta charset="utf-8">
+    <title>flex</title>
     <style>
-        html {
-            background: #f0f0f0;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
         }
 
-        .menu {
-            width: 200px;
-            height: 450px;
-
-            background: #fff;
-
-            padding-top: 5px;
-
+        .flex-container {
+            display: flex;
+            padding: 10px;
+            align-items: flex-start; /* Align items to the top */
         }
 
-        .menu ul {
-            /* list-style-image: url(src/pic/minus.gif); */
-            list-style-type: none;
-            margin-bottom: 10px;
-
-            padding-left: 30px;
-            position: relative;
+        .flex-item {
+            padding: 10px;
+            box-sizing: border-box;
         }
 
-        .menu li::before {
-            content: '\f147';
-            font-family: FontAwesome;
-            width: 16px;
-            height: 16px;
-            position: absolute;
-            /* background: url("src/css_sprites.png") no-repeat -10px -10px; */
-            left: 10px;
-
+        #left-flex {
+            min-width: 200px;
+            background: #ccf;
         }
 
-        .menu li li {
-            margin-left: -10px;
-            position: relative;
+        #center-flex {
+            flex-grow: 1;
+            background: #cfc;
+            margin: 0 10px;
         }
 
-        .menu li li::before {
-            content: '\f192';
-            font-family: FontAwesome;
-            width: 16px;
-            height: 16px;
-            position: absolute;
-            /* background: url("src/css_sprites.png") no-repeat -10px -46px; */
-
-            left: -20px;
-        }
-
-        .menu li a {
-            display: block;
-            color: #369;
-
-        }
-
-        .menu li a:hover {
-            color: #6092c4;
+        #right-flex {
+            min-width: 200px;
+            background: #fcc;
         }
     </style>
 </head>
-
 <body>
-    <nav class="menu">
-        <ul>
-            <li><a href="#">Фильмы</a>
-                <ul>
-                    <li><a href="#">Экшн</a></li>
-                    <li><a href="#">Мелодрамы</a></li>
-                    <li><a href="#">Сериалы</a></li>
-                    <li><a href="#">Семейные</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Музыка</a>
-                <ul>
-                    <li><a href="#">Классика</a></li>
-                    <li><a href="#">Джаз</a></li>
-                    <li><a href="#">Рок</a></li>
-                    <li><a href="#">Грандж</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Софт</a>
-                <ul>
-                    <li><a href="#">Графика</a></li>
-                    <li><a href="#">3D-моделирование</a></li>
-                    <li><a href="#">Машинопись</a></li>
-                    <li><a href="#">Переводчики</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Игры</a>
-                <ul>
-                    <li><a href="#">РПГ</a></li>
-                    <li><a href="#">Шутеры</a></li>
-                    <li><a href="#">Пасьянсы</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+    <div class="flex-container">
+        <div id="left-flex" class="flex-item">left<br>left<br>left<br>left<br>left</div>
+        <div id="center-flex" class="flex-item">
+            center text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text
+            text text text text</div>
+        <div id="right-flex" class="flex-item">right<br>right<br>right<br>right</div>
+    </div>
 </body>
-
 </html>
