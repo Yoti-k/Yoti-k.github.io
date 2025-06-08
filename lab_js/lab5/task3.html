@@ -1,73 +1,32 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="data:;base64,=">
-    <title>Список из объекта</title>
-    <style>
-        li {
-            margin: 5px 0;
-        }
-    </style>
+	<meta charset="UTF-8">
+	<title>Text</title>
 </head>
-
 <body>
-    <div id="container"></div>
+	<input type="button" id="hider" value="Спрятать текст">
+    <link rel="icon" href="data:;base64,=">
 
-    <script>
+	<div id="text">Текст</div>
+
+	<script>
         'use strict';
 
-        function createTree(container, data) {
+		document.getElementById('hider').addEventListener('click', function() {
+			
+            let textElement = document.getElementById('text');
+            let button = document.getElementById('hider');
 
-            function createTreeDom(obj) {
-
-                if (!Object.keys(obj).length) 
-                    return null;
-
-                let ul = document.createElement('ul');
-                for (let key in obj) {
-                    let li = document.createElement('li');
-                    li.textContent = key;
-
-                    let childrenUl = createTreeDom(obj[key]);
-                    if (childrenUl)
-                        li.appendChild(childrenUl);
-
-                    ul.appendChild(li);
-                }
-
-                return ul;
+            if (textElement.style.display === 'none') {
+                textElement.style.display = '';
+                button.value = 'Спрятать текст';
+            } else {
+                textElement.style.display = 'none';
+                button.value = 'Показать текст';
             }
-
-            container.innerHTML = '';
-            container.appendChild(createTreeDom(data));
-        }
-
-        let data = {
-            "Рыбы": {
-                "форель": {},
-                "лосось": {}
-            },
-            "Деревья": {
-                "Огромные": {
-                    "секвойя": {},
-                    "дуб": {}
-                },
-                "Цветковые": {
-                    "яблоня": {},
-                    "магнолия": {}
-                }
-            }
-        };
-
-        document.addEventListener("DOMContentLoaded", function () {
-            let container = document.getElementById('container');
-            createTree(container, data);
         });
 
-    </script>
+	</script>
 </body>
-
 </html>
